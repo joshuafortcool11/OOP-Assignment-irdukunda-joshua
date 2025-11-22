@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/src/{PKG_NAME}/OutputUtil.java">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/src/{PKG_NAME}/OutputUtil.java" />
+              <option name="originalContent" value="package {PKG_NAME};&#10;&#10;// ...existing code...&#10;import java.io.IOException;&#10;import java.nio.file.Files;&#10;import java.nio.file.Paths;&#10;import java.nio.file.StandardOpenOption;&#10;&#10;public class OutputUtil {&#10;    // Replace {STUDENT_ID} with your actual student ID (or set at build time)&#10;    public static final String STUDENT_ID = &quot;{STUDENT_ID}&quot;;&#10;&#10;    public static void printWithId(String output, String filename) {&#10;        String finalOutput = output + STUDENT_ID;&#10;        System.out.println(finalOutput);&#10;        if (filename != null &amp;&amp; !filename.isEmpty()) {&#10;            try {&#10;                Files.write(Paths.get(filename), (finalOutput + System.lineSeparator()).getBytes(),&#10;                        StandardOpenOption.CREATE, StandardOpenOption.APPEND);&#10;            } catch (IOException e) {&#10;                System.err.println(&quot;Failed to write output file: &quot; + e.getMessage());&#10;            }&#10;        }&#10;    }&#10;&#10;    public static void printWithId(String output) {&#10;        printWithId(output, null);&#10;    }&#10;}&#10;" />
+              <option name="updatedContent" value="package {PKG_NAME};&#10;&#10;// ...existing code...&#10;import java.io.IOException;&#10;import java.nio.file.Files;&#10;import java.nio.file.Paths;&#10;import java.nio.file.StandardOpenOption;&#10;&#10;public class OutputUtil {&#10;    // Replace {STUDENT_ID} with your actual student ID (or set at build time)&#10;    public static final String STUDENT_ID = &quot;{STUDENT_ID}&quot;;&#10;&#10;    public static void printWithId(String output, String filename) {&#10;        String finalOutput = output + STUDENT_ID;&#10;        System.out.println(finalOutput);&#10;        if (filename != null &amp;&amp; !filename.isEmpty()) {&#10;            try {&#10;                Files.write(Paths.get(filename), (finalOutput + System.lineSeparator()).getBytes(),&#10;                        StandardOpenOption.CREATE, StandardOpenOption.APPEND);&#10;            } catch (IOException e) {&#10;                System.err.println(&quot;Failed to write output file: &quot; + e.getMessage());&#10;            }&#10;        }&#10;    }&#10;&#10;    public static void printWithId(String output) {&#10;        printWithId(output, null);&#10;    }&#10;}&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
